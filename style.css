@@ -1,12 +1,62 @@
 
 
 
-#city-input, #weather-output {
+#city-input, #weather-output{
     max-width: 400px;
     margin: 0 auto;
+    margin-top: 10px;
 }
+.weather-output-content {
+    max-width: 400px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
   
 .banner {
     color: #FFD23F;
+    font-family: sans-serif;
+}
+
+.weather-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon{
+    position: absolute;
+    width: 18%;
+    right: 90px;
+}
+
+.error-title {
+    color: rgb(221, 89, 89);
+    text-decoration: underline;
+    font-size: large;
+}
+
+.error-message {
+    font-size: small;
+}
+.loading{
+    margin: 20px;
+}
+.spinner {
+    width: 50px;
+    height: 50px;
+}
+.loading-text {
+    font-size: smaller;
     font-family: sans-serif;
 }
